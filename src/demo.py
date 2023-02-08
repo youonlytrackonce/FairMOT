@@ -23,17 +23,19 @@ def demo(opt):
 
     logger.info('Starting tracking...')
     dataloader = datasets.LoadVideo(opt.input_video, opt.img_size)
-    result_filename = os.path.join(result_root, 'results.txt')
+    input_name = opt.input_video.split('/')[-1]
+    input_txt = input_name.split('.')[0]
+    result_filename = os.path.join(result_root, '{}.txt'.format(input_txt))
     frame_rate = dataloader.frame_rate
 
-    frame_dir = None if opt.output_format == 'text' else osp.join(result_root, 'frame')
+    frame_dir = None if opt.output_format == 'text' else osp.join(result_root, input_txt)
     eval_seq(opt, dataloader, 'mot', result_filename,
              save_dir=frame_dir, show_image=False, frame_rate=frame_rate,
              use_cuda=opt.gpus!=[-1])
 
     if opt.output_format == 'video':
-        output_video_path = osp.join(result_root, 'MOT16-03-results.mp4')
-        cmd_str = 'ffmpeg -f image2 -i {}/%05d.jpg -b 5000k -c:v mpeg4 {}'.format(osp.join(result_root, 'frame'), output_video_path)
+        output_video_path = osp.join(result_root, input_name)
+        cmd_str = 'ffmpeg -f image2 -i {}/%05d.jpg -b 5000k -c:v mpeg4 {}'.format(osp.join(result_root, input_txt), output_video_path)
         os.system(cmd_str)
 
 
