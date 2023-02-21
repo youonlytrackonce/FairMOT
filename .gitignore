@@ -18,3 +18,11 @@ __pycache__/
 ./src/data/MOT20
 ./src/data/PRW
 ./src/data/SOMPT22
+.src/data/bdd100k
+.src/data/MOT15
+.src/data/MOT16
+.src/data/Citypersons
+.src/data/labels
+.src/data/sompt22_tid_num.json
+.src/data/tid_num.json
+
