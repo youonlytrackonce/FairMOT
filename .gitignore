@@ -1,7 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
 .idea
+.vscode
 *.pth
 *.jpg
 *.jpeg
 *.png
 *.mp4
 *.pyc
+./src/data/Caltech
+./src/data/Cityscapes
+./src/data/crowdhuman
+./src/data/CUHKSYSU
+./src/data/ETHZ
+./src/data/MOT17
+./src/data/MOT20
+./src/data/PRW
+./src/data/SOMPT22

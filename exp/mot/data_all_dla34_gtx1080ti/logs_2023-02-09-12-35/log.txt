@@ -1,5 +1,0 @@
-2023-02-09-17-11: epoch: 1 |loss 4.563801 | hm_loss 1.210265 | wh_loss 1.734270 | off_loss 0.227875 | id_loss 10.993087 | time 276.300000 | 
-2023-02-09-21-51: epoch: 2 |loss 2.374106 | hm_loss 1.176497 | wh_loss 1.673887 | off_loss 0.227115 | id_loss 9.967429 | time 279.983333 | 
-2023-02-10-02-33: epoch: 3 |loss 2.346601 | hm_loss 1.143409 | wh_loss 1.634314 | off_loss 0.226122 | id_loss 9.680990 | time 281.716667 | 
-2023-02-10-06-38: epoch: 4 |loss      nan | hm_loss      nan | wh_loss      nan | off_loss      nan | id_loss      nan | time 244.950000 | 
-2023-02-10-10-39: epoch: 5 |loss      nan | hm_loss      nan | wh_loss      nan | off_loss      nan | id_loss      nan | time 241.200000 | 
