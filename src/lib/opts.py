@@ -99,6 +99,8 @@ class opts(object):
                              help='keep the original resolution'
                                   ' during validation.')
     # tracking
+    self.parser.add_argument('--test_sompt22', default=False, help='test sompt22')
+    self.parser.add_argument('--val_sompt22', default=False, help='val sompt22')
     self.parser.add_argument('--test_mot16', default=False, help='test mot16')
     self.parser.add_argument('--val_mot15', default=False, help='val mot15')
     self.parser.add_argument('--test_mot15', default=False, help='test mot15')

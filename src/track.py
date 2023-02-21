@@ -260,6 +260,27 @@ if __name__ == '__main__':
                       MOT20-08
                       '''
         data_root = os.path.join(opt.data_dir, 'MOT20/images/test')
+    if opt.val_sompt22:
+        seqs_str = '''SOMPT22-02
+                      SOMPT22-04
+                      SOMPT22-05
+                      SOMPT22-07
+                      SOMPT22-08
+                      SOMPT22-10
+                      SOMPT22-11
+                      SOMPT22-12
+                      SOMPT22-13                      
+                      '''
+        data_root = os.path.join(opt.data_dir, 'SOMPT22/images/train')
+    if opt.test_sompt22:
+        seqs_str = '''SOMPT22-01
+                      SOMPT22-03
+                      SOMPT22-06
+                      SOMPT22-09
+                      SOMPT22-14
+                      '''
+        data_root = os.path.join(opt.data_dir, 'MOT20/images/test')
+
     seqs = [seq.strip() for seq in seqs_str.split()]
 
     main(opt,
