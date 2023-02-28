@@ -279,7 +279,7 @@ if __name__ == '__main__':
                       SOMPT22-09
                       SOMPT22-14
                       '''
-        data_root = os.path.join(opt.data_dir, 'MOT20/images/test')
+        data_root = os.path.join(opt.data_dir, 'SOMPT22/images/test')
 
     seqs = [seq.strip() for seq in seqs_str.split()]
 
